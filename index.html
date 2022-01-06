@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Assignment-01</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <section class="first-section">
+
+            <div class="parent">
+                <div class="intro">
+                    <h1 id="text-1">I am <span id="my-name">Muhammad Hasib</span></h1><br>
+                    <p id="text-2">Frontend Developer. I like to craft solid and scalable frontend products with great user experiences.
+                    </p><br>
+                    <a href="#" class="btn">more about me</a>
+                </div>
+
+                <div>
+                    <img class="my-img" src="images/profile1.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="second-section">
+            <div class="second-parent">
+                <div class="left-side">
+                    <img class="left-image" src="images/profile2.png" alt="">
+                </div>
+                <div class="right-side">
+                    <div class="intro-2">
+                        <h4 id="text-1">About me</h4><br>
+
+                        <p id="text-2">Since beginning my journey as a freelance designer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer
+                            use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p><br>
+                        <a href="#" class="btn">Hire me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <section class="third-section">
+            <div class="third-parent">
+                <div class="intro-3">
+
+                    <h1 class="text-7">What Service We Offer For You</h1>
+
+                </div>
+                <div class="services">
+                    <div class="card">
+                        <br>
+
+                        <h3 class="text-4">Web Development</h3><br>
+                        <p class="text-5">I like to code things from scratch, and enjoy bringing ideas to life in the browser. Languages I speak: HTML, Pug, Slim, CSS, Sass, Less</p><br>
+                        <a class="text-6" href="#">Learn More</a>
+
+                    </div>
+                    <div class="card">
+                        <br>
+                        <h3 class="text-4">UX/UI Design</h3><br>
+                        <p class="text-5">I value simple content structure, clean design patterns, and thoughtful interactions. Things I enjoy designing: UX, UI, Web.</p><br>
+                        <a class="text-6" href="#">Learn More</a>
+
+                    </div>
+                    <div class="card">
+                        <br>
+                        <h3 class="text-4">iOS Developer</h3><br>
+                        <p class="text-5">An iOS developer is responsible for developing applications for mobile devices powered by Apple’s iOS operating system. .
+                        </p><br>
+                        <a class="text-6" href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div id="contact">Contact Me</div>
+
+        <section class="contact">
+            <form>
+                <input name="name" type="text" class="feedback-input" placeholder="Name" />
+                <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                <input type="submit" value="SUBMIT" />
+            </form>
+        </section>
+    </main>
+    <footer>
+
+        <p class="fotter">Copyright © <span id="fotter">2022</span> Muhammad Hasib</p>
+
+    </footer>
+
+
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function() {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function(msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        } else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+</body>
+
+</html>
